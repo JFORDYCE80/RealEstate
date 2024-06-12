@@ -13,8 +13,9 @@ a{
 }
 
 h2{
-    text-align: center;
-    margin-top: 10px;
+    text-align: left;
+    margin-top: 50px;
+   
 }
 h3{
     margin-top: 10px;
@@ -34,9 +35,6 @@ p{
     background-size: cover;
     height: 300px;
     
-}
-.header-p{
-    text-align: center;
 }
 .bar{
     display: flex;
@@ -84,5 +82,15 @@ p{
 .details-container{
     padding-left: 20px;
     list-style: none;
+}
+.list-container{
+    display: flex;
+    flex-direction: row;
+    padding-top: 10px;
+}
+.icon-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 /* Footer */
