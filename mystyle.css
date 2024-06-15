@@ -13,15 +13,16 @@ a{
 }
 
 h2{
-    text-align: left;
+    text-align: center;
     margin-top: 50px;
 }
 h3{
-    margin-top: 10px;
+    margin-top: 50px;
     margin-bottom: 10px;
 }
 p{
     line-height: 1.5;
+    text-align: left;
 }
 img{
     max-width: 100%;
@@ -37,20 +38,37 @@ img{
     height: 300px;
     
 }
+.site-init2{
+    text-align: center;
+    color: black;
+    background-color: orange;
+    background-size: cover;
+    height: 300px;
+}
 .bar{
     display: flex;
     align-items: center;
     justify-content: space-around;
     height: 80px;
 }
+.bar2{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 80px; 
+}
 .menu a{
     color: white;
     margin-right: 20px;
 }
+.menu2 a{
+    color: black;
+    margin-right: 20px
+}
 
 /* Utilities */
 .container{
-    width: 80%;
+    width: 70%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -68,6 +86,7 @@ img{
     margin: 20px;
 }
 
+
 /* Houses and Penthouses */
 .houses-item{
     background-color: #dedede; 
@@ -75,6 +94,9 @@ img{
 }   
 .houses-item-text{
     padding: 10px;
+}
+.header-para{
+    text-align: center;
 }
 .houses-item-text p.description{
     font-size: 14px;
@@ -91,6 +113,96 @@ img{
 }
 .flex-icons{
     display: flex;
+    justify-content: space-around;
+}
+.flex-radio{
+    display: flex;
+    flex-direction: row;
+    word-spacing: 200px;
+    margin-bottom: 10%;
+    padding-top: 50px;
+    padding-right: 200px;
     justify-content: space-between;
 }
+.flex-contact-date{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+    padding-right: 280px;
+}    
+
+.flex-icons img{
+    margin-right: 10px;
+}
+.form-container{
+    background-color: #dedede;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 10px;
+}
+.fieldset{
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    border: 1px solid gray;
+}
+.contact-fieldset{
+    padding: 100px;
+    margin: 20px;
+    border-radius: 10px;
+    border: 1px solid gray;
+}
+legend{
+    font-size: 16px;
+}
+.input-container{
+    margin-top: 10px;
+}
+.input-container label{
+    display: inline-block;
+    width: 100px;
+}
+.input-container input, 
+.input-container textarea{
+    width: 70%;
+    padding: 3px;
+}
+.para-container{
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.para1-container{
+    text-align: center;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background-color: #dedede;
+}
+.footer-flex-container{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+.privacy{
+    font-weight: bold;
+    text-decoration: underline;
+    padding-left: 10px;
+}
+.zillow{
+    font-weight: bold;
+    text-decoration: underline;
+}
+.fa-brands{
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 50%;
+    color: black;
+}
+
 /* Footer */
