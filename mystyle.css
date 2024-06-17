@@ -13,9 +13,11 @@ a{
 }
 
 h2{
-    text-align: center;
+    text-align: left;
     margin-top: 50px;
+    font-family: cursive;
 }
+
 h3{
     margin-top: 50px;
     margin-bottom: 10px;
@@ -40,16 +42,44 @@ img{
 }
 .site-init2{
     text-align: center;
-    color: black;
-    background-color: orange;
+    color: white;
+    background-image: url(./img/destacada3.jpg);
     background-size: cover;
     height: 300px;
 }
+.site-init3{
+    text-align: center;
+    color: white;
+    background-image: url(./img/highlight.jpg);
+    background-size: cover;
+    height: 300px;
+    
+}
+.site-init4{
+    text-align: center;
+    color: white;
+    background-image: url(./img/announcement4.jpg);
+    background-size: cover;
+    height: 500px;
+    
+}
 .bar{
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: space-around;
     height: 80px;
+}
+@media(max-width:768px){
+    .bar{
+        flex-direction: column;
+        height: 180px;
+    }
+    .menu a{
+        display: block;
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
 }
 .bar2{
     display: flex;
@@ -62,8 +92,8 @@ img{
     margin-right: 20px;
 }
 .menu2 a{
-    color: black;
-    margin-right: 20px
+    color: white;
+    margin-right: 20px;
 }
 
 /* Utilities */
@@ -72,9 +102,34 @@ img{
     margin-left: auto;
     margin-right: auto;
 }
+
+.about-flex-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 40%;
+    padding-bottom: 20px;
+    margin-top: 20px;
+}
+.mission-container{
+    text-align: left;
+    font-family: cursive;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
 .main-flex-container{
     display: flex;
     flex-direction: row;
+}
+
+@media(max-width:768px){
+    .main-flex-container{
+        flex-direction: column;
+    }  
+    .container{
+        width: 90%;
+    }
 }
 
 .btn-details{
@@ -86,17 +141,53 @@ img{
     margin: 20px;
 }
 
+.btn-details2{
+    display: block;
+    background-color: teal;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+/* more about us */
+@media(max-width:768px){
+    .more-about-item{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .more-about-item img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .more-about-item h3{
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
 
 /* Houses and Penthouses */
 .houses-item{
     background-color: #dedede; 
     margin-right: 10px;
+    margin-bottom: 20px;
 }   
+
+@media(max-width:768px){
+    .houses-item{
+        margin-bottom: 20px;
+    }
+}
 .houses-item-text{
     padding: 10px;
 }
+
 .header-para{
     text-align: center;
+    padding-top: 50px;
 }
 .houses-item-text p.description{
     font-size: 14px;
@@ -118,19 +209,12 @@ img{
 .flex-radio{
     display: flex;
     flex-direction: row;
-    word-spacing: 200px;
-    margin-bottom: 10%;
-    padding-top: 50px;
-    padding-right: 200px;
     justify-content: space-between;
 }
 .flex-contact-date{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 50px;
-    padding-bottom: 20px;
-    padding-right: 280px;
 }    
 
 .flex-icons img{
@@ -159,16 +243,19 @@ legend{
 }
 .input-container{
     margin-top: 10px;
+    display: flex;
 }
 .input-container label{
-    display: inline-block;
+    /* display: inline-block; */
     width: 100px;
 }
 .input-container input, 
-.input-container textarea{
+.input-container textarea,
+.input-container select{
     width: 70%;
     padding: 3px;
 }
+
 .para-container{
     text-align: center;
     font-weight: bold;
@@ -204,5 +291,45 @@ legend{
     border-radius: 50%;
     color: black;
 }
+.main-content{
+    display: flex;
+    justify-content: space-around;
+}
+.blog-container{
+    width: 70%;
+    margin-right: 20px;
+}
+.blog-btn{
+    display: inline-block;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: white;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 1px;
 
-/* Footer */
+}
+.btn-read{
+    background-color: rgb(103, 130, 130);
+}
+.blog h2{
+    font-weight: bold;
+    font-family: cursive;
+    font-size: 30px;
+    text-decoration: underline;
+    text-align: center;
+}
+.blog-flex-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+.houses-item-text p.description2{
+    font-size: 18px;
+    font-family: cursive;
+    text-align: center;
+}
